@@ -12,8 +12,14 @@ def index():
 
 @app.route('/predicao', methods=['POST'])
 def predicao():
-  comentario = request.form['comentario']
-  predicao = model.predict([comentario])
+  sex = request.form['sex']
+  age = request.form['age']
+  cp = request.form['cp']
+  chol = request.form['chol']
+  thal = request.form['thal']
+  thalach = request.form['thalach']
+  exang = request.form['exang']
+  predicao = model.predict([sex, age, cp, chol, thal, thalach, exang])
   return render_template('resposta.html', predicao=predicao[0])
 
 app.run(debug=True)
