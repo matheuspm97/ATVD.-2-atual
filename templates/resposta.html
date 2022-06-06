@@ -1,12 +1,46 @@
 <!DOCTYPE html>
+<style>
+    body{
+        text-align: center; 
+        top:30%;
+        font-size: 20px;
+    }
+    img {
+        opacity: 0.55;
+        position: center;
+        height: 100%;
+        width: 100%;
+
+    }
+    .texto {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+    }
+</style>
 <head>
     <title>Resposta</title>
 </head>
-<body>
+<body>    
     {% if predicao == 1 %}
-        <div style="color: red">Alta chance de obter doença cardiaca</div>
+    <img src="https://sarar.com.br/wp-content/uploads/2021/08/cardiologista-em-florianopolis.png.webp" margin="0" heigth="80%">
+        <div class="texto">
+        <div style="color: red"><b>POSSUI MAIS DE 50% DE CHANCE DE TER OU DESENVOLVER CARDIOPATIA.</b></div>
+        <br><br><br><div style="color: black">Este resultado nao é absoluto, procure um médico e realize os devidos exmes.
+        <p><a href="http://www.cardiometro.com.br/anteriores.asp">VISITE AGORA!</a></p>
+            </div>
+        </div>
     {% else %}
-        <div style="color: green">Baixa chance de obter doença cardiaca</div>
-    {% endif %}
+    <img src="https://sarar.com.br/wp-content/uploads/2021/08/cardiologista-em-florianopolis.png.webp" margin="0" heigth="80%">
+    <div class="texto">
+    <div style="color: rgb(1, 88, 27)"><b>POSSUI MENOS DE 50% DE CHANCE DE TER OU DESENVOLVER CARDIOPATIA.</b></div>
+    <br><br><br><div style="color: black">Este resultado nao é absoluto, procure um médico e realize os devidos exmes.
+    <p><a href="http://www.cardiometro.com.br/anteriores.asp">VISITE AGORA!</a></p>
+        </div>
+    </div>
+            {% endif %}
+    
 </body>
 </html>

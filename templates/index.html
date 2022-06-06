@@ -4,12 +4,22 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(to right, rgb(252, 197, 197), rgb(178, 168, 255), rgb(193, 255, 255));
+            background: linear-gradient(to right, rgb(245, 204, 204), rgb(200, 194, 247), rgb(205, 247, 247));
             background-repeat: no-repeat;
             background-size: auto;
         }
         img {
-            opacity: 0.70;
+            opacity: 0.25;
+        }
+        .texto {
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            -webkit-text-stroke-width: 0.5px;
+            -webkit-text-stroke-color: rgb(102, 7, 7);
+            color: rgb(0, 0, 0);
         }
         .box{
             color: rgb(0, 0, 0);
@@ -78,7 +88,13 @@
     </style>
 </head>
 <body>
+    <div class="container">
     <img src="https://img.freepik.com/vetores-gratis/cardiologia-o-cardiologista-examina-o-coracao-humano-medico-trata-doencas-cardiacas-verifica-os-batimentos-cardiacos-e-o-pulso-do-paciente-com-cardiograma-diagnostico-de-acidente-vascular-cerebral_284092-2682.jpg?w=826" height="100%" width="80%">
+    <div class="texto"><p><b>   No Brasil mais de 300 mil pessoas morrem todos os anos por doenças relacionadas ao coração. Estilos de vidas que nao priorizam o bem estar do corpo humano agravam os sintomas elevando os riscos de no futuro desenvolver alguma cardiopatia. 
+        <br>
+        <p>Este formulário foi criado com base em dados de pacientes reais, a fim de analisar suas caracterista e assim lhe prover informações, que visa despertar a curiosidade, buscar por profissionais da area e conhecer seu corpo e exames mais completos e eficazes, como tambem melhorar o seu estilo de vida. </b></p>
+    </div>
+    </div>
     <div class="box">
         <form action="predicao" method="POST">
             <fieldset>
