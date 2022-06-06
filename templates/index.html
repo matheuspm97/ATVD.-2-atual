@@ -4,15 +4,18 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background: url(/workspace/ATVD.-2-atual/fundo.jpg);
+            background: linear-gradient(to right, rgb(252, 197, 197), rgb(178, 168, 255), rgb(193, 255, 255));
             background-repeat: no-repeat;
             background-size: auto;
+        }
+        img {
+            opacity: 0.70;
         }
         .box{
             color: rgb(0, 0, 0);
             position: absolute;
             top: 50%;
-            right: 1%;
+            right: -12%;
             transform: translate(-50%,-50%);
             background-image: conic-gradient(rgb(195, 235, 235), rgb(177, 216, 231), rgb(173, 183, 226), rgb(185, 199, 240), rgb(195, 235, 235));
             padding: 8px;
@@ -71,9 +74,11 @@
         #submit:hover{
             background: linear-gradient(to right,rgb(138, 140, 141),rgb(49, 48, 63));
         }
+        
     </style>
 </head>
 <body>
+    <img src="https://img.freepik.com/vetores-gratis/cardiologia-o-cardiologista-examina-o-coracao-humano-medico-trata-doencas-cardiacas-verifica-os-batimentos-cardiacos-e-o-pulso-do-paciente-com-cardiograma-diagnostico-de-acidente-vascular-cerebral_284092-2682.jpg?w=826" height="100%" width="80%">
     <div class="box">
         <form action="predicao" method="POST">
             <fieldset>
